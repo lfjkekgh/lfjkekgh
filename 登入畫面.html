@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style_2.css">
+        <script src="js_function.js"> </script>
+		<title>MyWeb</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+
+  <body>
+    <div class="system_name">
+      <h2>XXOO系統</h2>
+    </div>
+
+    <!--登入畫面-->
+    <div class="login_page">
+      <div id="container1">
+
+        <div class="login">  
+          
+          <h3>登入 Login</h3>
+
+          <form action="登入畫面.html">
+            <input type="text" id="username" name="username" placeholder="帳號" required>
+            <div class="tab"></div>
+            <input type="text" id="password" name="password" placeholder="密碼" required>
+            <div class="tab"></div>
+            <input type="submit" value="登入" class="submit" onclick="check()">
+          </form>  
+
+          <h5 onclick="show_hide()">註冊帳號</h5>
+          <h5 ib="mm"></h5>
+        </div><!-- login end-->
+      </div><!-- container1 end-->
+    </div><!-- login_page end-->
+
+    <div id="message" class="message">登入成功!</div>
+    
+    <!--註冊畫面-->
+    <div class="signup_page"
+       id="container2">
+
+        <div class="signup">  
+          
+          <h3>註冊 Sign Up</h3>
+
+          <form action="登入畫面.html">
+            <input type="text" id="fullname" name="fullname" placeholder="使用者全名" required>
+            <div class="tab"></div>
+            <input type="text" id="username2" name="username" placeholder="帳號" required>
+            <div class="tab"></div>
+            <input type="text" id="password2" name="password" placeholder="密碼" required>
+            <div class="tab"></div>
+            <input type="text" id="comfirm_password" name="comfirm_password" placeholder="確認密碼" required>
+            <div class="tab"></div>            
+            <input type="submit" value="註冊" class="submit" onclick="Register()">
+          </form>  
+
+          <h5 onclick="show_hide()">登入帳號</h5>
+          
+        </div><!-- signup end-->
+      </div><!-- container2 end-->
+    </div><!-- signup_page end--> 
+
+    <div id="copyright">
+      <h4>Copyright © 2018 RoseWang All rights reserved</h4><!--因為js，會跑版--> 
+    </div>    
+  </body>
+</html>
